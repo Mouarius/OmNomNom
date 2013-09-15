@@ -6,6 +6,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import fr.mouarius.onn.block.Blocks;
 import fr.mouarius.onn.lib.References;
 import fr.mouarius.onn.proxies.CommonProxy;
 
@@ -32,12 +33,13 @@ public class OmNomNom
 	@Mod.EventHandler
 	public static void preInit(FMLPreInitializationEvent event)
 	{
-
+		Blocks.init();
 	}
 
 	@Mod.EventHandler
 	public static void init(FMLInitializationEvent event)
 	{
+		Blocks.addName();
 		proxy.initRenderers();
 		proxy.initSounds();
 	}
