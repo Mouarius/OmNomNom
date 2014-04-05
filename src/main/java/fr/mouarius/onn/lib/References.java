@@ -6,5 +6,6 @@ public class References {
 	public static final String MODVERSION = "beta 1.0";
 	public static final String PROXYLOCATION = "fr.mouarius.onn.proxies";
 	
+	public static final String RESOURCESPREFIX = MODID.toLowerCase() + ":";
 
 }
